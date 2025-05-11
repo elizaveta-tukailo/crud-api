@@ -1,13 +1,27 @@
 {
-  "include": ["src"],
-  "exclude": ["dist", "node_modules"],
   "compilerOptions": {
-   "module": "NodeNext",
+    "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "target": "ESNext",
+    "target": "ES2016",
     "esModuleInterop": true,
     "strict": true,
     "outDir": "./dist",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "lib": ["ESNext"],
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "inlineSourceMap": true,
+    "removeComments": true,
+    "noEmitOnError": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "skipLibCheck": true,
+    "rewriteRelativeImportExtensions": true,
+    "verbatimModuleSyntax": true
   },
+  "include": [ "src/**/*" ],
+  "exclude": ["dist", "node_modules"],
 }
