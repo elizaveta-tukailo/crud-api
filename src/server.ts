@@ -1,10 +1,10 @@
 import {createServer} from 'node:http';
-import {routeHandler} from './routes/user.routes.ts';
+import { routeHandler } from './routes/user.routes';
 import 'dotenv/config';
 
 const PORT = process.env.PORT || 3000;
 
-const server = createServer(routeHandler);
+export const server = createServer(routeHandler);
 
 server.listen(PORT, () => {
   console.log(`Server running at port: ${PORT}`);

@@ -17,7 +17,7 @@
 # run application in development mode
 $ npm run start:dev
 
-# run application in produnction mode
+# run application in production mode
 $ npm run start:prod
 
 # run test

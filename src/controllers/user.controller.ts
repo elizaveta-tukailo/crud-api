@@ -1,7 +1,7 @@
 import { IncomingMessage, ServerResponse } from "http";
 import { parse } from "url";
-import { userService } from "../services/user.service.ts";
-import { validateUserId } from "../utils/validateUserId.ts";
+import { userService } from "../services/user.service";
+import { validateUserId } from "../utils/validateUserId";
 
 const USERS_URL = "/api/users";
 
